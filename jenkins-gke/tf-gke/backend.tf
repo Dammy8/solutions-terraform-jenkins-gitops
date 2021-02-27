@@ -16,7 +16,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "PROJECT_ID-tfstate"
+    bucket = "clever-guard-297102-jenkins-tfstate"
     prefix = "jenkins"
   }
 }
