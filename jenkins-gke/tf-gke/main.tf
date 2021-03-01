@@ -188,7 +188,8 @@ data "local_file" "helm_chart_values" {
 
 resource "helm_release" "jenkins" {
   name       = "jenkins"
-  repository = "https://kubernetes-charts.storage.googleapis.com"
+  #repository = "https://kubernetes-charts.storage.googleapis.com"
+  repository = "https://kubernetes-sigs.github.io/service-catalog"
   chart      = "jenkins"
   version    = "2.17.0"
   timeout    = 1200
