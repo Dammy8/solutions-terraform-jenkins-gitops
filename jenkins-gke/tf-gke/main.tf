@@ -191,7 +191,7 @@ resource "helm_release" "jenkins" {
   #repository = "https://kubernetes-charts.storage.googleapis.com"
   repository = "https://kubernetes-sigs.github.io/service-catalog"
   #repository = "https://charts.helm.sh/stable"
-  chart      = "stable/jenkins"
+  chart      = "jenkins"
   #version    = "2.17.0"
   timeout    = 1200
 
